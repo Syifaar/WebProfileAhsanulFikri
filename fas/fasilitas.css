@@ -1,0 +1,291 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.container {
+    width: 100%;
+    margin:auto;
+}
+   
+/* header */
+header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: background-color 0.5s ease;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    /*border: 1px solid;*/
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    position: sticky; 
+    position: -webkit-sticky;    
+    top: 0;    
+    font-family:'Poppins', sans-serif;
+    z-index: 10;
+    
+    background-image:linear-gradient(270deg, rgba(0, 0, 0, 0.86) 1%, rgba(44.39, 108.72, 104.86, 0.92) 67%);;
+    /*background-color: #f1f1f1; /* warna background */
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2); /* shadow */
+
+}
+
+
+.navbar div {
+    padding: 9px 30px;
+    text-align: center;
+    font-size: small;
+    color:rgb(214, 206, 206);
+    display: flex;
+    margin-bottom: 10;
+    margin-top: 10;
+    z-index: 10;
+}
+
+.logo{
+    margin-right: auto;
+    padding: 3px 20px;
+    padding-left: 80px;
+}
+
+.sd{
+    padding: 3px 0px;
+    font-size: 12px;
+    margin: auto;
+    padding-right: 250;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 250px;
+}
+
+
+  
+.menu{
+   
+}
+
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0; 
+    overflow: hidden;   
+
+    list-style-type: none; /* hilangkan bullet */
+    margin: 0;
+    padding: 0;
+
+    display:flex;
+    gap:70px;
+    
+}
+
+nav ul li {
+    float: left;
+    display: inline-block; /* susun menu secara horizontal */
+    margin-right: 10px; /* jarak antar menu */
+
+    list-style: none;
+}
+    
+nav ul li a {
+    
+    color: rgb(227, 223, 223);
+    font-weight:400;
+    text-align: center; 
+    padding: 0px 16px 0px 16px; 
+    
+    text-decoration: none; /* hilangkan underline pada link */
+
+
+    color: #dad7d7; /* warna teks */
+    padding: 5px; /* jarak padding pada menu */
+    transition: 0.5s ease;
+    text-transform: uppercase;
+
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    opacity: 0.2;
+    filter:blur(0px);
+}
+
+.hero-line {
+    border:5px;
+}
+
+
+
+
+#about {
+    background-color: rgb(246, 240, 240);
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title {
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.about-paragraf {
+    margin-top: 20px;
+    margin-bottom: 10px; 
+    font-family: cursive;  
+}
+
+.about-img{
+    width: 700px;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.honest {
+    padding-right: 40px;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.visimisi{
+    padding-right: 40px;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.judul-visi{
+    font-size: 40px;
+}
+
+.judul-misi{
+    font-size: 40px;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    background: rgb(21, 20, 20);
+    padding: 20px;
+    font-size: 11px;
+    border: 1px solid;
+    color: white;
+}
+
+/* CLASS= FOOTER-NOTE*/
+.footer-note-img{
+    margin-right: auto;
+    padding: 3px 20px;
+    padding-left: 30px;
+    width: 80px;
+    margin-bottom: 5px;
+}
+
+.footer-note-satu{
+    margin-top: 10px;
+    margin-left: 30px;
+
+}
+
+.footer-note-dua{
+    margin-top: 25px;
+    margin-left: 30px;
+
+}
+
+.footer-note-tiga{
+    margin-top: 6px;
+    margin-left: 30px;
+
+}
+
+.footer-note-copy{
+    margin-top: 25px;
+    margin-left: 30px;
+    font-size: 10px;
+    font-weight: 1000;
+}
+
+/*CLASS = FOOTER-SOSMED*/
+.footer-sosmed{
+    margin-top: 25px;
+    margin-left: 70px;
+    margin-top: 1px;
+}
+
+.footer-sosmed-satu{
+    margin-top: 25px;
+    margin-left: 30px;
+    font-weight: 1000;
+    font-size: 14px;
+}
+
+.footer-sosmed-dua{
+    margin-top: 17px;
+    margin-left: 30px;
+}
+

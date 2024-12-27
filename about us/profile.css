@@ -1,0 +1,516 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+
+
+.container {
+    width: 100%;
+    margin:auto;
+}
+   
+/* header */
+header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: background-color 0.5s ease;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    /*border: 1px solid;*/
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    position: sticky; 
+    position: -webkit-sticky;    
+    top: 0;    
+    font-family:'Poppins', sans-serif;
+    z-index: 10;
+    
+    background-image:linear-gradient(270deg, rgba(0, 0, 0, 0.86) 1%, rgba(44.39, 108.72, 104.86, 0.92) 67%);;
+    /*background-color: #f1f1f1; /* warna background */
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2); /* shadow */
+
+}
+
+
+.navbar div {
+    padding: 9px 30px;
+    text-align: center;
+    font-size: small;
+    color:rgb(214, 206, 206);
+    display: flex;
+    margin-bottom: 10;
+    margin-top: 10;
+    z-index: 10;
+}
+
+.logo{
+    margin-right: auto;
+    padding: 3px 20px;
+    padding-left: 80px;
+}
+
+.sd{
+    padding: 6px 415px 9px 0px;
+    font-size: 12px;
+    margin: 0px;
+    font-family: Poppins, sans-serif;
+}
+
+
+  
+.menu{
+   
+}
+
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0; 
+    overflow: hidden;   
+
+    list-style-type: none; /* hilangkan bullet */
+    margin: 0;
+    padding: 0;
+
+    display:flex;
+    gap:70px;
+    
+}
+
+nav ul li {
+    float: left;
+    display: inline-block; /* susun menu secara horizontal */
+    margin-right: 10px; /* jarak antar menu */
+
+    list-style: none;
+}
+    
+nav ul li a {
+    
+    color: rgb(227, 223, 223);
+    font-weight:400;
+    text-align: center; 
+    padding: 0px 16px 0px 16px; 
+    
+    text-decoration: none; /* hilangkan underline pada link */
+
+
+    color: #dad7d7; /* warna teks */
+    padding: 5px; /* jarak padding pada menu */
+    transition: 0.5s ease;
+    text-transform: uppercase;
+
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    opacity: 0.2;
+    filter:blur(0px);
+}
+
+
+.hero{
+    width:100%;
+    height:100vh;
+    /*max-width: 1138px; /* Ubah ukuran maksimal sesuai kebutuhan */
+    max-height: 700px;
+    /*background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));*/
+    position:relative;
+    padding: 0 5%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.content{
+    background: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    
+    
+}
+
+.content h1{
+    font-size: 20px;
+    color:white;
+    font-weight:300;
+    margin-top: 80px;
+
+}
+
+.content h2{
+    font-size: 47px;
+    color: rgb(42, 41, 41);
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 0px;
+    display: inline-block;
+    border: 2px;
+    padding: 14px 50px;
+
+}
+
+.ttg{
+    margin-top: 50px;
+    padding: 4px 50px;
+    text-align: center;
+}
+
+.int{
+    margin-bottom: 30px;
+    padding: 14px 50px;
+    text-align: center;
+}
+
+.back-video{
+    position: absolute;
+    right:0;
+    bottom:0;
+    z-index: -1;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+
+/*.hero{
+    background-image:linear-gradient(270deg, rgba(0, 0, 0, 0.86) 1%, rgba(34, 77, 74, 0.92) 67%);
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    padding-left: 80px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+
+.hero-line {
+    border:5px;
+}*/
+
+
+/*vidio*/
+.vidio-teks{
+    /*margin-left: 800;*/
+}
+
+.vidio-teks-tulis{
+    margin-top: 21px;
+    font-size: 26px;
+    /* margin-left: 35px; */
+    text-align: center;
+}
+
+.kepsek{
+    font-size: 30px;
+    /* float: right; */
+    /* margin-right: 200px; */
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+    /* margin-left: 35px;*/
+}
+
+.vidio-profil{
+    margin-top: 190px;
+    margin-bottom: 100px;
+    /* width: 1000px; */
+    margin-right: 100px;
+    margin-left: 70px;
+    text-align: center;
+}
+
+
+
+/* SEJARAH */
+
+.isi-sejarah{
+    margin-top: 10px; /* Jarak atas */
+    margin-bottom: 10px; /* Jarak bawah */
+    margin-left: 20px; /* Jarak kiri */
+    margin-right: 20px; /* Jarak kanan */
+}
+
+
+.sejarah-teks{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.judul-sejarah{
+    font-size: 40px;
+
+
+
+    padding-right: 40px;
+    padding-left: 120px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    
+}
+
+.isi-sejarah{
+    font-size: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    line-height: 1.5;
+    color: #434444;
+    
+}
+
+
+.honest {
+    padding-right: 40px;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(248, 241, 241);
+}
+
+.visimisi{
+    padding-right: 40px;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.judul-visi{
+    font-size: 43px;
+    text-align: center;
+}
+
+
+.isi-visi{
+    font-size: 25px;
+    color: #434444;
+    margin-top: 25px;
+    text-align: center;
+
+}
+
+.judul-misi{
+    font-size: 43px;
+    text-align: center;
+}
+
+.isi-misi{
+    font-size: 20px;
+    margin-top: 35px;
+    padding-left: 20px;
+    color: #434444;
+}
+
+  
+.isi-misi-poin {
+    margin-bottom: 20px;
+    text-indent: -15px;
+}
+
+
+.struktur{
+    padding-right: 40px;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.struktur-p{
+    font-size: 40px;
+}
+
+/*KURIKULUM*/
+#kurikulum{
+
+}
+
+.kuri{
+    
+    padding-right: 40px;
+    padding-left: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.kuri-tertulis{
+
+}
+
+.kuri-tertulis-img{
+    width: 1100px;
+    margin-left: 20px;
+
+}
+
+.kuri-tertulis-dot{
+
+}
+
+.kuri-tertulis-dot-satu{
+    width: 100px;
+    margin-left: 140;
+    margin-top: 100;
+    font-size: 20;
+}
+
+.kuri-tertulis-dot-dua{
+    width: 1000px;
+    margin-left: 60;
+    margin-top: 10;
+    font-size: 30;
+    font-weight: bold;
+
+}
+
+/* footer */
+.footer{
+    display: flex;
+    background: rgb(21, 20, 20);
+    padding: 20px;
+    font-size: 11px;
+    color:white;
+    border: 1px solid;
+    gap: 130px;
+    align-items: center;
+}
+
+.footer-semua{
+    margin-bottom:18px;
+    display: flex;
+    background: rgb(21, 20, 20);
+    padding: 20px;
+    font-size: 11px;
+    color:white;
+    gap: 130px;
+    align-items: center;
+}
+
+/* CLASS= FOOTER-NOTE*/
+.footer-note-img{
+    width: 80;
+    margin-bottom: 5;
+    margin-top: 38px;
+}
+
+.footer-note-satu{
+    margin-top: 10;
+    margin-left: 30;
+
+}
+
+.footer-note-dua{
+    margin-top: 25;
+    margin-left: 30;
+
+}
+
+.footer-note-tiga{
+    margin-top: 6;
+    margin-left: 30;
+
+}
+
+.footer-note-copy{
+    margin-top: 20px;
+    font-size: 10;
+    font-weight: 600;
+    
+    
+}
+
+.logo-copyright{
+    margin-left: 50px;
+}
+
+
+/*CLASS = FOOTER-SOSMED*/
+.footer-sosmed{
+    margin-top: 25;
+    margin-left: 70;
+    margin-top: 1;
+}
+
+.footer-sosmed-satu{
+    margin-top: 25;
+    margin-left: 30;
+    font-weight: 1000;
+    font-size: 14;
+}
+
+.footer-sosmed-dua{
+    margin-top: 17;
+    margin-left: 30;
+    font-size: 12;
+}
+
+.infoBox{
+    margin-top: 20px;
+}
+
+.infoBox div{
+    display:flex;
+    align-items:center;
+    margin-bottom: 10px;
+}
+
+.infoBox div span{
+    min-width:30px;
+    height:30px;
+    color:#fff;
+    background:#434444;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius:50%;
+    margin-right:15px;
+
+}
+
+.infoBox div p{
+    color:#fff;
+    font-size:1.1em;
+}
+
+.infoBox div a{
+    color:#fff;
+    text-decoration: none;
+    font-size:1.1em;
+}
+
+.sci{
+    margin-top: 40px;
+    display:flex;
+    margin-left: 30;
+}
+
+.sci li{
+    list-style:none;
+    margin-right: 15px;
+}
+
+.sci li a{
+    color:#fff;
+    font-size:2em;
+    color:#ccc;
+}
+
+.sci li a:hover{
+    color: #fff;
+}
+
+
+
